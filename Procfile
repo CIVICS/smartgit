@@ -1,0 +1,1 @@
+web: java $JAVA_OPTS -jar build/libs/smart.git.jar --server.port=$PORT --dyno.type=web
