@@ -21,6 +21,12 @@ public class SmartRestController {
     @Autowired
     GitWathcer gitWathcer;
 
+    @RequestMapping(value = "/ping" , method = GET)
+    @ResponseBody
+    public String doPing(){
+        return "Pong";
+    }
+
 
     @RequestMapping(value = "/issue/save/{org}/{user}/{index}" , method = GET)
     @ResponseBody
