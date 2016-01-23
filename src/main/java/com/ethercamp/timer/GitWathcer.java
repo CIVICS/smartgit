@@ -48,6 +48,8 @@ public class GitWathcer {
 
                 System.out.println("Closing the issue: " + gitIssue);
                 ethereumService.reportIssue(gitIssue);
+
+                return;
             }
         }
     }
